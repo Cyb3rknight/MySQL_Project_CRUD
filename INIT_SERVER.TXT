@@ -1,0 +1,31 @@
+All commands in the bash terminal to set up all our database and other important information
+
+!!!!!!!!!!!!!! install 'NODE.JS' and 'GIT BASH' on your computer !!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!! If you have powershell, you don't need to install 'GIT BASH' !!!!!!!!!!!!!!!!!!!!
+-- Access our 'server' directory in the project --
+COMMAND ->  cd server/
+
+-- Initiate package.json file --
+COMMAND ->  npm init -y
+
+-- Initiate express dependencies. You can see if it's installed in 'package.json' file in the 'server' directory --
+COMMAND ->  npm install express
+
+"dependencies": {
+    "express": "^4.19.2"
+  }
+
+-- Install MySQL which is going to let us interface with the MySQL server and make queries--
+COMMAND -> npm install mysql
+
+-- Install dotenv so we have a place to store all of our configurations for our database like password,username,etc--
+COMMAND -> npm install dotenv 
+
+-- Install nodemon module. Every time we make changes to our script we don't have to restart the server it will watch it for us and reload it--
+COMMAND -> npm install nodemon --save-dev
+
+-- Install cors so that we can make API calls from our front end to our back end
+ COMMAND -> npm install cors
+
+--  Don't forget to change this code in the 'package.json'. You need to change "index.js" to  "app.js"--
+"main": "app.js",  
